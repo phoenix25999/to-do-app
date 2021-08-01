@@ -1,0 +1,30 @@
+.edit-input {
+    margin-bottom: 20px !important;
+}
+
+select {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 20px;
+    outline: none;
+    background: none;
+    box-shadow: inset 10px 10px 8px #1c1c1d,
+                inset -4px -4px 8px #3a3d42;
+    border-radius: 25px;
+    color: #fff;
+    border: 2px solid transparent;
+    margin-bottom: 50px;
+}
+
+option {
+    color: #000;
+}
+
+label {
+    display: block;
+    margin: 0 0 5px 8px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: $heading-color
+}

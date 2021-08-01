@@ -1,0 +1,33 @@
+.task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background: #292d32;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 6px 10px #1c1c1d, 
+                -4px -6px 10px #3a3d42;
+
+    // &:hover {
+    //     cursor: pointer;
+    //     // box-shadow: inset 8px 8px 8px #27292c, 
+    //     //         inset -8px -8px 8px #404349;
+    //     box-shadow: inset 10px 10px 8px #1c1c1d,
+    //                         inset -4px -4px 8px #3a3d42;
+    // }
+
+    .edit, .delete {
+        padding: 2px 4px;
+        border: 1px solid transparent;
+        
+        img {
+            height: 15px;
+            width: 15px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid $border-color;
+        }
+    }
+}

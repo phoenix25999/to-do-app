@@ -1,0 +1,68 @@
+.new-task-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    .new-task-overlay {
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+    }
+
+    .new-task-modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #2a2d32;
+        padding: 20px 40px 30px;
+        border-radius: 20px;
+
+        h2 {
+            margin-bottom: 30px;
+            color: $heading-color;
+            font-weight: 600;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        margin-bottom: 50px;
+        font-size: 16px;
+        padding: 10px 20px;
+        outline: none;
+        background: none;
+        box-shadow: inset 10px 10px 8px #1c1c1d,
+                    inset -4px -4px 8px #3a3d42;
+        border-radius: 25px;
+        color: #fff;
+        border: 2px solid transparent;
+
+        &:focus {
+            border: 2px solid $border-color;
+        }
+    }
+
+    button {
+        width: fit-content;
+        align-self: center;
+        border-color: transparent;
+
+        &:disabled {
+            cursor: not-allowed !important;
+            box-shadow: none;
+            box-shadow: inset 10px 10px 8px #1c1c1d,
+                    inset -4px -4px 8px #3a3d42 !important;
+            color: grey;
+            border-color: transparent;
+        }
+    }
+}
