@@ -18,8 +18,8 @@ const NewTaskForm = ({ addTask, setShowModal }) => {
 
     return (
         <form>
-            <input type="text" name="title" value={title} placeholder="Enter task" onChange={(e)=>setTitle(e.target.value)}/>
-            <button type="submit" className="add-task-btn" disabled={!title} onClick={(e)=>onAddTask(e)}>Add Task</button>
+            <input autoFocus type="text" name="title" value={title} placeholder="Enter task" onChange={(e)=>setTitle(e.target.value)}/>
+            <button type="submit" className="btn" disabled={!title} onClick={(e)=>onAddTask(e)}>Add Task</button>
         </form>
     );
 };

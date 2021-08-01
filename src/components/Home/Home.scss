@@ -11,7 +11,7 @@ h1 {
     padding: 30px;
   }
   
-  .add-task-btn {
+  .btn {
     outline: none;
     background: transparent;
     padding: 12px 35px;
@@ -22,13 +22,13 @@ h1 {
     box-shadow: 10px 15px 20px 10px #27292c,
                           -15px -7px 20px 5px #4e5258;
     border: 1px solid $border-color;
-    
-    &:first-of-type {
-        margin-right: 40px;
-    }
+  }
+
+  .todays-task-btn {
+    margin-right: 40px;
   }
   
-  .add-task-btn:hover {
+  .btn:hover {
     cursor: pointer;
     box-shadow: inset 15px 12px 8px #1c1c1d,
                 inset -9px -12px 8px #3a3d42;

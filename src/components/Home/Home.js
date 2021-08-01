@@ -38,8 +38,8 @@ const Home = ({ tasks }) => {
                 <div className="header">
                     <h1>Here's your to do list ...</h1>
                     <div>
-                        <button onClick={(e)=>onShowTodaysTasks(e)} className="add-task-btn">Today's Tasks</button>
-                        <button onClick={(e)=>onAddTask(e)} className="add-task-btn">Add New Task</button>
+                        <button onClick={(e)=>onShowTodaysTasks(e)} className="btn todays-task-btn">Today's Tasks</button>
+                        <button onClick={(e)=>onAddTask(e)} className="btn">Add New Task</button>
                     </div>
                 </div>
                 <Categories />

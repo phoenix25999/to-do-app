@@ -3,6 +3,25 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: normal;
+  scrollbar-width: thin; /* for mozilla */
+}
+
+::-webkit-scrollbar-track {
+  background: #181818 !important; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(104, 103, 103); 
 }
 
 body {

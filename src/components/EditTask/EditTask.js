@@ -37,7 +37,7 @@ const EditTask = ({ task, setShowModal, updateTask }) => {
                 <form>
                     <div>
                         <label>Task</label>
-                        <input type="text" name="title" value={title} onChange={(e)=>setTitle(e.target.value)} className="edit-input" />
+                        <input type="text" name="title" value={title} onChange={(e)=>setTitle(e.target.value)} className="edit-input" autoFocus />
                     </div>
                     <div>
                         <label>Category</label>
@@ -47,9 +47,10 @@ const EditTask = ({ task, setShowModal, updateTask }) => {
                             <option value='completed'>Completed</option>
                             <option value='abandoned'>Abandoned</option>
                         </select>
+                        { /*  Haven't customised the dropdown, beacuse it will take lot of time or will have use any 3rd party plugin for that */ }
                     </div>
 
-                    <button type="submit" className="add-task-btn" disabled={!title} onClick={(e)=>onEditTask(e)} >Update Task</button>
+                    <button type="submit" className="btn" disabled={!title} onClick={(e)=>onEditTask(e)} >Update Task</button>
                 </form>
             </div>
         </div>
